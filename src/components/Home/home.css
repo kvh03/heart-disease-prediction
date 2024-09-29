@@ -1,0 +1,78 @@
+form {
+    margin: auto;
+    max-width: 45%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(7, 7, 7, 0.893);
+    width: 750px;
+    background-color: black;
+    margin-bottom: 3em;
+}
+
+.form-container {
+    background-color: black;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    align-items: center;
+}
+
+.input-label-left {
+    margin: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 0;
+    font-family: monospace;
+}
+
+.input-label-right {
+    margin: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 0;
+    font-family: monospace;
+}
+
+form input {
+    margin: 0.5em auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 12px 2px;
+    font-size: 18px;
+}
+
+form button {
+    margin: 0.5em auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: black;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #ffffff;
+    box-shadow: 0 0 8px rgb(255, 255, 255);
+}
+
+h2 {
+    color: #ffffff;
+    padding: 3px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    font-family: monospace;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+}
