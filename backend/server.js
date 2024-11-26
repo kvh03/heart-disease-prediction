@@ -21,7 +21,7 @@ app.post('/predict-heart-disease', async (req, res) => {
         console.log('Form Data Received:', req.body);
 
         // Forward the data to the Flask API
-        const response = await axios.post('https://heartdisease-prediction.vercel.app/', req.body);
+        const response = await axios.post('https://heartdisease-prediction.vercel.app/api/predict-heart-disease', req.body);
         
         // Return the Flask response (prediction)
         res.json(response.data);
