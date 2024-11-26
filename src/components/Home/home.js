@@ -35,7 +35,7 @@ const Home = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:4000/predict-heart-disease', formData);
+            const response = await axios.post(`https://heartdisease-prediction.vercel.app/', formData);
             setPrediction(response.data.prediction);
         } catch (error) {
             console.error('Error fetching prediction:', error.response ? error.response.data : error.message);
