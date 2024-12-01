@@ -55,7 +55,7 @@ def predict():
         return jsonify({'error': str(e)}), 500
 
 # Root route to confirm the server is running
-@app.route('/', methods=['GET'])
+@app.route('/api', methods=['GET'])
 def index():
     return "Heart Disease Prediction API is running."
 
