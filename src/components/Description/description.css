@@ -1,37 +1,64 @@
-.description{
+.description {
     background-color: black;
+    padding: 1em;
+    color: black;
 }
-.top{
+
+.top, .middle, .bottom {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1em; 
+    margin-bottom: 2em;
 }
-.card{
+
+.card {
     background-color: #ffffff;
     width: 300px;
-    margin-top: 3em;
     padding: 1em;
     border-radius: 20px;
+    box-sizing: border-box;
+    flex-shrink: 0; /* prevent shrinking below 300px */
 }
-.middle{
-    display: flex;
-    justify-content: space-evenly;
-}
-.bottom{
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 2em;
-}
-h3{
+
+h3 {
     margin-top: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
 }
-ul{
+
+ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
+    color: black;
 }
-li{
-    align-content: center;
+
+li {
     margin-bottom: 1em;
     font-family: cursive;
+    color: black;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+    .top, .middle, .bottom {
+        justify-content: center;
+    }
+    .card {
+        width: 90%; 
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .top, .middle, .bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 95%;
+        max-width: none;
+        margin-bottom: 1.5em;
+    }
 }
