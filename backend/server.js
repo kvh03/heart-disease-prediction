@@ -20,7 +20,7 @@ app.post('/predict', async (req, res) => {
     try {
         console.log('Form Data Received at Node:', req.body);
 
-        const response = await axios.post('https://heart-disease-prediction-nw87.onrender.com/predict-heart-disease', req.body);
+        const response = await axios.post('https://heart-disease-prediction-nw87.onrender.com/predict', req.body);
 
         console.log('Response from Flask:', response.data);
         res.json(response.data);
