@@ -16,7 +16,7 @@ def predict_heart_disease(input_data):
     
     return prediction[0]
 
-@app.route('/api/predict-heart-disease', methods=['POST'])
+@app.route('/predict', methods=['POST'])
 def predict():
     try:
         data = request.json
