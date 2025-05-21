@@ -35,7 +35,7 @@ const Home = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://heart-disease-prediction-node.onrender.com/getreq/predict-heart-disease', formData);
+            const response = await axios.post('https://heart-disease-prediction-node.onrender.com/predict', formData);
             setPrediction(response.data.prediction);
         } catch (error) {
             console.error('Error fetching prediction:', error.response?.data || error.message);
