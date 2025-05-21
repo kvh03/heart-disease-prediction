@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 //     res.send('This is the heart disease prediction endpoint.');
 // });
 
-app.post('/getreq/predict-heart-disease', async (req, res) => {
+app.post('/predict', async (req, res) => {
     try {
         console.log('Form Data Received at Node:', req.body);
 
